@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <NSURLSessionDelegate, NSURLSessionTaskDelegate>
 
+-(IBAction)makeNetworkRequest:(id)sender;
+- (void)displayAlert:(NSString*)message;
 
 @end
 
